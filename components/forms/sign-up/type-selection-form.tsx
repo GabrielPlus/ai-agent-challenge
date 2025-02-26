@@ -13,9 +13,9 @@ const TypeSelectionForm = ({ register, setUserType, userType }: Props) => {
     <>
       <h2 className="text-gravel md:text-4xl font-bold ">Create an account</h2>
       <p className="text-iridium md:text-sm">
-  Discover powerful insights from YouTube videos! Whether you're a blogger or an analyst, 
-  <br /> let's customize your experience to fit your needs.
-</p>
+        Discover powerful insights from YouTube videos! Whether you&apos;re a blogger or an analyst, 
+        <br /> let&apos;s customize your experience to fit your needs.
+      </p>
 
       <UserTypeCard
         register={register}
@@ -30,10 +30,9 @@ const TypeSelectionForm = ({ register, setUserType, userType }: Props) => {
         setUserType={setUserType}
         userType={userType}
         value="blogger"
-        title="I'm a blogger"
+        title="I&apos;m a blogger"
         text="Looking to enhance my content with video analysis."
       />
-
     </>
   )
 }

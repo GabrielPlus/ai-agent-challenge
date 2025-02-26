@@ -1,9 +1,10 @@
 import { PrismaClient } from "@prisma/client";
 
-declare global {
-    var prisma: PrismaClient | undefined
-}
+// Module-level variable to store the Prisma client
+let prisma: PrismaClient;
 
-export const client = globalThis.prisma || new PrismaClient()
+// Initialize the Prisma client
+export const client = prisma || new PrismaClient();
 
-if(process.env.NODE_ENV !== 'production') globalThis.prisma = client
+// Assign the client to the module-level variable in non-production environments
+if (process.env.NODE_ENV !== 'production') prisma = client;

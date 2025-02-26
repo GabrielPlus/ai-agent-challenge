@@ -6,9 +6,7 @@ import Link from 'next/link'
 import React, { useState } from 'react' // Import useState
 import { useFormContext } from 'react-hook-form'
 
-type Props = {}
-
-const ButtonHandler = (props: Props) => {
+const ButtonHandler = () => {
   const { setCurrentStep, currentStep } = useAuthContextHook()
   const { formState, getFieldState, getValues } = useFormContext()
   const { onGenerateOTP } = useSignUpForm()
@@ -41,7 +39,7 @@ const ButtonHandler = (props: Props) => {
       <div className="w-full flex flex-col gap-3 items-center">
         <Button
           type="submit"
-          className="w-full  bg-blue-400 text-white py-2 rounded-md hover:bg-blue-600 transition"
+          className="w-full bg-blue-400 text-white py-2 rounded-md hover:bg-blue-600 transition"
         >
           Create an account
         </Button>
@@ -63,7 +61,7 @@ const ButtonHandler = (props: Props) => {
       <div className="w-full flex flex-col gap-3 items-center">
         <Button
           type="submit"
-          className="w-full "
+          className="w-full"
           disabled={isLoading} // Disable the button when loading
           {...(isName &&
             isEmail &&
@@ -117,7 +115,7 @@ const ButtonHandler = (props: Props) => {
     <div className="w-full flex flex-col gap-3 items-center">
       <Button
         type="submit"
-        className="w-full bg-blue-400 "
+        className="w-full bg-blue-400"
         onClick={() => setCurrentStep((prev: number) => prev + 1)}
       >
         Continue
