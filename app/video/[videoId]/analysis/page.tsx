@@ -86,7 +86,7 @@ function AnalysisPage() {
           <YoutubeVideoDetails videoId={videoId} />
 
           {/* Thumbnail Generation */}
-          <ThumbnailGeneration videoId={videoId} />
+          
 
           {/* Title Generation */}
           <TitleGenerations videoId={videoId} />

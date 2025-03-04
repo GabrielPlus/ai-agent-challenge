@@ -104,7 +104,7 @@ function AiAgentChat({ videoId }: { videoId: string }) {
     const userMessage: Message = {
       id: `generate-image-${randomId}`,
       role: "user",
-      content: "Generate a thumbnail for this video",
+      content: "Generate a thumbnail for this video (this feature may not work)",
     };
     append(userMessage);
   };
@@ -284,7 +284,7 @@ function AiAgentChat({ videoId }: { videoId: string }) {
   >
     <LetterText className="w-4 h-4" />
     {isScriptGenerationEnabled ? (
-      <span>Build Script</span>
+      <span>Generate Script</span>
     ) : (
       <span>Upgrade to generate a script</span>
     )}
@@ -297,17 +297,7 @@ function AiAgentChat({ videoId }: { videoId: string }) {
     disabled={!isTitleGenerationEnabled}
   >
     <PenIcon className="w-4 h-4" />
-    Build Title
-  </button>
-
-  <button
-    className="text-xs xl:text-sm w-full flex items-center justify-center gap-2 py-2 px-4 bg-gray-100 hover:bg-gray-200 rounded-full transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-    onClick={generateImage}
-    type="button"
-    disabled={!isImageGenerationEnabled}
-  >
-    <ImageIcon className="w-4 h-4" />
-    Create Image
+    Generate Title
   </button>
 </div>
 
