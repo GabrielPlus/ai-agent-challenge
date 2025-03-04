@@ -5,11 +5,11 @@ import { Brain, ImageIcon, MessageSquare, Sparkles, Video } from "lucide-react";
 const steps = [
   {
     title: "1. Connect Your Content",
-    description: "Share your YouTube video URL and let Corrina get to work",
+    description: "Share your YouTube video URL and let CortexAI get to work",
     icon: Video,
   },
   {
-    title: "2. Corrina Agent Analysis",
+    title: "2. CortexAI Agent Analysis",
     description: "Your personal agent analyzes every aspect of your content",
     icon: Brain,
   },
@@ -24,7 +24,7 @@ const features = [
   {
     title: "AI Analysis",
     description:
-      "Get deep insights into your video content with Corrina AI. Understand viewer engagement and content quality.",
+      "Get deep insights into your video content with CortexAI. Understand viewer engagement and content quality.",
     icon: Brain,
     iconBg: "bg-blue-100",
     iconColor: "text-blue-600",
@@ -62,9 +62,9 @@ const features = [
     iconColor: "text-red-600",
   },
   {
-    title: "Discuss With Corrina Agent",
+    title: "Discuss With CortexAI Agent",
     description:
-      "Engage in real-time conversations with Corrina AI to refine ideas and enhance content strategy.",
+      "Engage in real-time conversations with CortexAI to refine ideas and enhance content strategy.",
     icon: Sparkles,
     iconBg: "bg-orange-100",
     iconColor: "text-orange-600",
@@ -74,18 +74,24 @@ const features = [
 export default function Home() {
   return (
     <div className="min-h-screen">
+<div className="text-center">
+  <span className="w-full block text-blue-100 bg-gradient-to-r from-blue-700 to-blue-500 px-4 py-2 text-xs sm:text-sm md:text-base">
+    I made it Free for you To keep the server running, buy me a coffee 0741535521 ☕
+  </span>
+</div>
+
       <section className="py-20 bg-gradient-to-b from-white to-gray-50">
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center gap-10 text-center mb-12">
             <AgentPulse size="large" color="blue" />
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Meet Corrina Your{""}
+              Meet CortexAI Your{""}
               <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
                 AI Content Agent
               </span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Transform your video content with AI-powered analysis, transcription, and insights.
+              Transform your YouTube content with AI-powered analysis, transcription, and insights.
             </p>
             <YoutubeVideoForm />
           </div>
@@ -122,7 +128,7 @@ export default function Home() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-6xl">
           <h2 className="text-3xl font-bold text-center mb-12">
-            Meet Corrina AI in 3 Simple Steps
+            Meet CortexAI in 3 Simple Steps
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {steps.map((step, index) => {

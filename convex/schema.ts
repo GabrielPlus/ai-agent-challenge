@@ -10,7 +10,7 @@ export default defineSchema({
     .index("by_video_id", ["videoId"])
     .index("by_user_and_video", ["userId", "videoId"]),
 
-    Transcription: defineTable({
+    transcript: defineTable({
         videoId: v.string(),
         userId: v.string(),
         transcript: v.array(

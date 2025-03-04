@@ -22,10 +22,10 @@ const Layout = async ({ children }: Props) => {
       </div>
       <div className="hidden lg:flex flex-1 max-h-full overflow-hidden relative bg-cream flex-col pl-24 gap-3 items-center justify-center ml-[-10rem] mt-[-15rem]">
         <h2 className="text-gravel text-2xl md:text-4xl font-bold">
-          Hi, I’m your AI powered Agentube!
+          Hi, I’m your AI powered CortexTube!
         </h2>
         <p className="text-iridium text-sm md:text-base mb-10">
-          AgentTube is capable of helping without a form...{' '}
+          CortexTube is capable of helping without a form...{' '}
           <br />
           something never done before 😉
         </p>

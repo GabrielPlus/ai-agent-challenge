@@ -12,6 +12,10 @@ const nextConfig: NextConfig = {
         hostname: "yt3.ggpht.com",
         protocol: "https",
       },
+      {
+        hostname: "ceaseless-jellyfish-719.convex.cloud",
+        protocol: "https",
+      },
     ],
   },
 };
