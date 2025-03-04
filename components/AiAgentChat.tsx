@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 import ReactMarkdown from "react-markdown";
 import { useSchematicFlag } from "@schematichq/schematic-react";
 import { FeatureFlag } from "@/features/flags";
-import { BotIcon, ImageIcon, LetterText, PenIcon } from "lucide-react";
+import { BotIcon, LetterText, PenIcon } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { toast } from "sonner";
 
@@ -41,9 +41,9 @@ function AiAgentChat({ videoId }: { videoId: string }) {
   const isScriptGenerationEnabled = useSchematicFlag(
     FeatureFlag.SCRIPT_GENERATION
   );
-  const isImageGenerationEnabled = useSchematicFlag(
-    FeatureFlag.IMAGE_GENERATION
-  );
+  // const isImageGenerationEnabled = useSchematicFlag(
+  //   FeatureFlag.IMAGE_GENERATION
+  // );
   const isTitleGenerationEnabled = useSchematicFlag(
     FeatureFlag.TITLE_GENERATIONS
   );
@@ -99,15 +99,15 @@ function AiAgentChat({ videoId }: { videoId: string }) {
     append(userMessage);
   };
 
-  const generateImage = async () => {
-    const randomId = Math.random().toString(36).substring(2, 15);
-    const userMessage: Message = {
-      id: `generate-image-${randomId}`,
-      role: "user",
-      content: "Generate a thumbnail for this video (this feature may not work)",
-    };
-    append(userMessage);
-  };
+  // const generateImage = async () => {
+  //   const randomId = Math.random().toString(36).substring(2, 15);
+  //   const userMessage: Message = {
+  //     id: `generate-image-${randomId}`,
+  //     role: "user",
+  //     content: "Generate a thumbnail for this video (this feature may not work)",
+  //   };
+  //   append(userMessage);
+  // };
 
   const generateTitle = async () => {
     const randomId = Math.random().toString(36).substring(2, 15);

@@ -2,7 +2,7 @@
 
 import { createOrGetVideo } from "@/actions/createOrGetVideo";
 import AiAgentChat from "@/components/AiAgentChat";
-import ThumbnailGeneration from "@/components/ThumbnailGeneration";
+// import ThumbnailGeneration from "@/components/ThumbnailGeneration";
 import TitleGenerations from "@/components/TitleGenerations";
 import Transcription from "@/components/Transcription";
 import Usage from "@/components/Usage";
